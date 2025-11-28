@@ -148,6 +148,8 @@ footer {
 
 .gallery img, .gallery video {
   width: calc(50% - 0.5em);
+  height: auto;
+  object-fit: contain;
   border-radius: 10px;
 }
 
