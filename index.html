@@ -21,6 +21,23 @@
     <p>Creating interactive worlds and systems through code and creativity.</p>
   </header>
 
+<section class="video-carousel-section">
+  <div class="video-carousel-container">
+
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+    <div class="video-track" id="videoTrack">
+      <video src="videos/DungeonVideo.mp4" autoplay muted loop playsinline></video>
+      <video src="videos/Recording 2025-11-08 172525.mp4" autoplay muted loop playsinline></video>
+      <video src="videos/Demo - final.mp4" autoplay muted loop playsinline></video>
+      <video src="videos/BlackJack.mp4" autoplay muted loop playsinline></video>
+    </div>
+
+    <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+
+  </div>
+</section>
+  
   <section id="projects" class="projects-section">
     <h2>Projects</h2>
 
@@ -47,6 +64,12 @@
         <img src="images/Environment-StarTrek.png" alt="Project 4 Thumbnail">
         <h3>Star Trek Ship Decorator</h3>
         <p>Unity | UI systems | Object placement mechanic</p>
+      </div>
+
+      <div class="project-card" onclick="openModal('project5')">
+        <img src="images/BlackJackScreen.png" alt="Project 5 Thumbnail">
+        <h3>Black Jack game</h3>
+        <p>Unity | Fixed Time Period | Game Jam</p>
       </div>
       
     </div>
@@ -144,6 +167,22 @@
       </div> 
     </div>
 
+      <div id="project5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('project5')">&times;</span>
+        <h2>Black Jack Game</h2>
+        <p>This simple black jack game was made in a UWE Starting Block Game Jam with a group. I made the entirety of the simple Black Jack game
+          in little time between classes and work over two days. This project was initially planned to have several casino style games but 
+          due to poor organization and not enough work put into the project, very little was done in time for the jam completion. 
+          However I was still able to get a small working unpolished demo of a recognizable game done on a tight schedule.
+        </p>
+        <div class="gallery">
+          <video src="videos/BlackJack.mp4"controls></video>
+          <img src="images/BlackJackScreen.png" alt="Scene">
+          <img src="images/PlayerWinScreen.png" alt="Win">
+        </div>
+      </div> 
+    </div>
 
 
   <script src="script.js"></script>
