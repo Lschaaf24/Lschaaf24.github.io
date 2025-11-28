@@ -65,7 +65,7 @@ body {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2em;
   margin-top: 2em;
 }
@@ -118,11 +118,11 @@ footer {
 
 .modal-content {
   background-color: var(--card-bg);
-  margin: 5% auto;
-  padding: 2em;
+  margin: 3% auto;
+  padding: 2.5em;
   border-radius: 15px;
-  width: 90%;
-  max-width: 900px;
+  width: 95%;
+  max-width: 1200px;
   box-shadow: 0 0 20px rgba(108, 99, 255, 0.5);
   color: var(--text-color);
   text-align: left;
