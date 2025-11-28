@@ -150,3 +150,18 @@ footer {
   width: calc(50% - 0.5em);
   border-radius: 10px;
 }
+
+.gif-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  margin-top: 1.5em;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 0.5em;
+}
+
+.gif-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
