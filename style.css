@@ -146,10 +146,16 @@ footer {
   margin-top: 1em;
 }
 
-.gallery img, .gallery video {
+.gallery img {
   width: calc(50% - 0.5em);
   height: auto;
   object-fit: contain;
+  border-radius: 10px;
+}
+.gallery video {
+  width: calc(100% - 0.5em);  
+  max-height: 400px;        
+  object-fit: cover;          
   border-radius: 10px;
 }
 
@@ -164,6 +170,8 @@ footer {
 }
 
 .gif-gallery img {
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   border-radius: 10px;
 }
