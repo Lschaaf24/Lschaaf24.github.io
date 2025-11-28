@@ -3,13 +3,14 @@ let currentIndex = 0;
 function moveCarousel(direction) {
   const track = document.getElementById("videoTrack");
   const videos = track.children;
-  const total = videos.length;
+  //const total = videos.length;
 
   currentIndex += direction;
 
   if (currentIndex < 0) currentIndex = total - 1;
   if (currentIndex >= total) currentIndex = 0;
 
+  const videoWidth = videos[0].getBoundingClientRect().width;
   track.style.transform = `translateX(-${currentIndex * videoWidth}px)`;
 }
 
