@@ -10,7 +10,7 @@ function moveCarousel(direction) {
   if (currentIndex < 0) currentIndex = total - 1;
   if (currentIndex >= total) currentIndex = 0;
 
-  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  track.style.transform = `translateX(-${currentIndex * videoWidth}px)`;
 }
 
 // Smooth scroll for nav links
