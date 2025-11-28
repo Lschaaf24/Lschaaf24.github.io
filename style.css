@@ -181,12 +181,14 @@ footer {
   margin: 4em 0;
   padding: 0;
   display: flex;
+  justify-content: center;
 }
 
 .video-carousel-container {
   position: relative;
   width: 100%;
   max-width: 1400px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
