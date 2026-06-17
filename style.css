@@ -1,9 +1,10 @@
 :root {
-  --bg-color: #0d0b1a;
-  --accent-color: #49778f;
-  --text-color: #e0e0ff;
-  --card-bg: #15132b; 
-  --hover-color: #84daff;
+  --bg-color: #0a1428;
+  --accent-color: #0d7dba;
+  --text-color: #e8f1f5;
+  --card-bg: #0f2847; 
+  --hover-color: #00d4ff;
+  --highlight-blue: #1e90ff;
 }
 
 body {
@@ -18,12 +19,12 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgba(32, 56, 75, 0.95);
+  background-color: rgba(13, 125, 186, 0.9);
   display: flex;
   justify-content: center;
   padding: 1em 0;
   z-index: 10;
-  box-shadow: 0 2px 15px rgba(108, 99, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
 }
 
 .navbar ul {
@@ -49,7 +50,7 @@ body {
   padding-top: 6em;
   text-align: center;
   padding: 8em 2em;
-  background: radial-gradient(circle at center, #1b1740, #0d0b1a);
+  background-color: #0a1428;
 }
 
 .hero-section h1 {
@@ -73,10 +74,11 @@ body {
 .project-card {
   background-color: var(--card-bg);
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(108, 99, 255, 0.2);
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.25);
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
+  border: 1px solid rgba(30, 144, 255, 0.2);
 }
 
 .project-card img {
@@ -86,21 +88,21 @@ body {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(108, 99, 255, 0.4);
+  box-shadow: 0 0 16px rgba(30, 144, 255, 0.5);
 }
 
 .about-section {
   padding: 4em 2em;
-  background-color: #121028;
+  background-color: #0f2847;
   text-align: center;
 }
 
 footer {
-  background-color: #09081a;
+  background-color: #072a47;
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* Modal Styles */
@@ -123,9 +125,10 @@ footer {
   border-radius: 15px;
   width: 95%;
   max-width: 1200px;
-  box-shadow: 0 0 20px rgba(108, 99, 255, 0.5);
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.4);
   color: var(--text-color);
   text-align: left;
+  border: 1px solid rgba(30, 144, 255, 0.2);
 }
 
 .close {
