@@ -56,8 +56,8 @@
 
       <div class="project-card" onclick="openModal('project3')">
         <img src="" alt="Project 3 Thumbnail">
-        <h3>SFML Platformer</h3>
-        <p>C++ | SFML | Platformer</p>
+        <h3>Top Down Dungeon Crawler</h3>
+        <p>C++ | Pathfinding | Physics-based combat</p>
       </div>
 
       <div class="project-card" onclick="openModal('project4')">
@@ -139,9 +139,11 @@
   <div id="project3" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('project3')">&times;</span>
-      <h2>SFML Platformer</h2>
-      <p>A C++/SFML platformer game taking inspiration from Doodle Jump. This game includes simple enemies, infinite looping
-      terrain to jump around and collectible items for scoring.
+      <h2>Top Down Dungeon Crawler</h2>
+      <p>This project is a top down, click to move dungeon crawler with roguelike elements. Left click to move and right click to attack facing rooms
+        of enemies before progressing to a boss battle. Enemies and player use smart A* based pathfinding and precise collisions with walls objects and weapons attacks.
+        There are ranged and melee enemies in this project that the player must fight using a physics swing based combat. After defeating the enemies of a room the player
+        must choose an upgrade to their character stats (movement and attack speed, attack damage and health) which will help combat the increasing difficulty of the rooms.
       </p>
       <div class="gallery">
         <video src="videos/Platformer_Recording - Trim.mp4"controls></video>
