@@ -19,12 +19,14 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgba(13, 125, 186, 0.9);
   display: flex;
   justify-content: center;
-  padding: 1em 0;
+  padding: 0.75em 0;
   z-index: 10;
-  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+  background-color: rgba(6, 12, 20, 0.75);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(2,8,20,0.45);
 }
 
 .navbar ul {
@@ -36,14 +38,20 @@ body {
 }
 
 .navbar a {
-  color: var(--accent-color);
+  color: rgba(232,241,245,0.95);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: 600;
+  transition: color 0.18s ease, border-bottom-color 0.18s ease;
 }
 
 .navbar a:hover {
   color: var(--hover-color);
+}
+
+.navbar a.active {
+  color: var(--hover-color);
+  border-bottom: 2px solid rgba(30,144,255,0.35);
+  padding-bottom: 0.2em;
 }
 
 .hero-section {
@@ -255,7 +263,13 @@ footer {
 .video-carousel-container {
   position: relative;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(6,12,20,0.55);
+  border: 1px solid rgba(255,255,255,0.03);
 }
 
 .video-track {
@@ -267,9 +281,10 @@ footer {
 .video-track video {
   flex: 0 0 100%; 
   width: 100%;
-  height: auto;
+  height: 420px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(108, 99, 255, 0.25);
+  box-shadow: 0 10px 30px rgba(2,8,20,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
   object-fit: cover;
 
 }
@@ -278,19 +293,20 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(108, 99, 255, 0.4);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 0.3em 0.5em;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.03);
+  color: var(--text-color);
+  font-size: 1.6rem;
+  padding: 0.4em 0.55em;
   cursor: pointer;
   border-radius: 8px;
   z-index: 10;
-  transition: background 0.3s;
+  transition: background 0.18s, transform 0.12s;
 }
 
 .carousel-btn:hover {
-  background-color: rgba(140, 132, 255, 0.7);
+  background-color: rgba(255,255,255,0.12);
+  transform: translateY(-50%) scale(1.03);
 }
 
 .carousel-btn.prev { left: 1%; }
